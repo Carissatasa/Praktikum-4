@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Effect Fade</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".fade1").click(function(){
+				$("#kotak").css('display','none');
+				$("#kotak").fadeIn("slow");
+			});
+			$(".fade2").click(function(){
+				$("#kotak").fadeOut("slow");
+			});
+			$(".fade3").click(function(){
+				$("#kotak").css('display','block');
+				$("#kotak").fadeTo("slow",0.3);
+			});
+		});
+	</script>
+	<style type="text/css">
+		#kotak{
+			width: 200px;
+			height: 150px;
+			background-color: yellow;
+			border: 1px solid black;
+			margin-top: 20px;
+			margin-left: 10px;
+		}
+	</style>
+</head>
+<body>
+<div id="kotak"></div>
+<br>
+<button class="fade1">Fade In</button>
+<button class="fade2">Fade Out</button>
+<button class="fade3">Fade to 0.3</button>
+</body>
+</html>
