@@ -7,13 +7,13 @@
 		$(document).ready(function(){
 			$(".fade1").click(function(){
 				$("#kotak").css('display','none');
+				$("#kotak").css('opacity','1');
 				$("#kotak").fadeIn("slow");
 			});
 			$(".fade2").click(function(){
 				$("#kotak").fadeOut("slow");
 			});
 			$(".fade3").click(function(){
-				$("#kotak").css('display','block');
 				$("#kotak").fadeTo("slow",0.3);
 			});
 		});
